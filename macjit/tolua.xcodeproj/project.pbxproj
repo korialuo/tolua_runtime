@@ -28,6 +28,9 @@
 		84F8B8E81C4567C100AE9B8F /* udp.c in Sources */ = {isa = PBXBuildFile; fileRef = 84F8B8D31C4567C100AE9B8F /* udp.c */; };
 		84F8B8E91C4567C100AE9B8F /* unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 84F8B8D51C4567C100AE9B8F /* unix.c */; };
 		84F8B8EA1C4567C100AE9B8F /* usocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 84F8B8D71C4567C100AE9B8F /* usocket.c */; };
+		A43460B91E3B7CC00081F1BB /* lsproto.c in Sources */ = {isa = PBXBuildFile; fileRef = A43460B41E3B7CC00081F1BB /* lsproto.c */; };
+		A43460BA1E3B7CC00081F1BB /* lua-lzc.c in Sources */ = {isa = PBXBuildFile; fileRef = A43460B51E3B7CC00081F1BB /* lua-lzc.c */; };
+		A43460BB1E3B7CC00081F1BB /* sproto.c in Sources */ = {isa = PBXBuildFile; fileRef = A43460B71E3B7CC00081F1BB /* sproto.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +75,11 @@
 		84F8B8D61C4567C100AE9B8F /* unix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unix.h; sourceTree = "<group>"; };
 		84F8B8D71C4567C100AE9B8F /* usocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = usocket.c; sourceTree = "<group>"; };
 		84F8B8D81C4567C100AE9B8F /* usocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = usocket.h; sourceTree = "<group>"; };
+		A43460B41E3B7CC00081F1BB /* lsproto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lsproto.c; path = ../../sproto/lsproto.c; sourceTree = "<group>"; };
+		A43460B51E3B7CC00081F1BB /* lua-lzc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "lua-lzc.c"; path = "../../sproto/lua-lzc.c"; sourceTree = "<group>"; };
+		A43460B61E3B7CC00081F1BB /* msvcint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = msvcint.h; path = ../../sproto/msvcint.h; sourceTree = "<group>"; };
+		A43460B71E3B7CC00081F1BB /* sproto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sproto.c; path = ../../sproto/sproto.c; sourceTree = "<group>"; };
+		A43460B81E3B7CC00081F1BB /* sproto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sproto.h; path = ../../sproto/sproto.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +123,7 @@
 		0F4B04D51800959F002EA938 /* tolua */ = {
 			isa = PBXGroup;
 			children = (
+				A43460B31E3B7CAD0081F1BB /* sproto */,
 				84F8B8B81C4567C100AE9B8F /* luasocket */,
 				84F8B8B61C45679C00AE9B8F /* lpeg.c */,
 				84F8B8B21C45678E00AE9B8F /* tolua.c */,
@@ -173,6 +182,18 @@
 			);
 			name = luasocket;
 			path = ../../luasocket;
+			sourceTree = "<group>";
+		};
+		A43460B31E3B7CAD0081F1BB /* sproto */ = {
+			isa = PBXGroup;
+			children = (
+				A43460B41E3B7CC00081F1BB /* lsproto.c */,
+				A43460B51E3B7CC00081F1BB /* lua-lzc.c */,
+				A43460B61E3B7CC00081F1BB /* msvcint.h */,
+				A43460B71E3B7CC00081F1BB /* sproto.c */,
+				A43460B81E3B7CC00081F1BB /* sproto.h */,
+			);
+			name = sproto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84F8B8B51C45679700AE9B8F /* struct.c in Sources */,
+				A43460BB1E3B7CC00081F1BB /* sproto.c in Sources */,
 				84F8B8DC1C4567C100AE9B8F /* buffer.c in Sources */,
 				84F8B8E31C4567C100AE9B8F /* options.c in Sources */,
 				84F8B8E81C4567C100AE9B8F /* udp.c in Sources */,
@@ -254,7 +276,9 @@
 				84F8B8E61C4567C100AE9B8F /* tcp.c in Sources */,
 				84F8B8EA1C4567C100AE9B8F /* usocket.c in Sources */,
 				84F8B8DE1C4567C100AE9B8F /* inet.c in Sources */,
+				A43460BA1E3B7CC00081F1BB /* lua-lzc.c in Sources */,
 				84F8B8E71C4567C100AE9B8F /* timeout.c in Sources */,
+				A43460B91E3B7CC00081F1BB /* lsproto.c in Sources */,
 				84F8B8E01C4567C100AE9B8F /* luasocket.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

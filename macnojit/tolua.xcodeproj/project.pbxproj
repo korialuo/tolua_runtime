@@ -62,6 +62,9 @@
 		84F8B8B31C45678E00AE9B8F /* tolua.c in Sources */ = {isa = PBXBuildFile; fileRef = 84F8B8B21C45678E00AE9B8F /* tolua.c */; };
 		84F8B8B51C45679700AE9B8F /* struct.c in Sources */ = {isa = PBXBuildFile; fileRef = 84F8B8B41C45679700AE9B8F /* struct.c */; };
 		84F8B8B71C45679C00AE9B8F /* lpeg.c in Sources */ = {isa = PBXBuildFile; fileRef = 84F8B8B61C45679C00AE9B8F /* lpeg.c */; };
+		A43460B01E3B7C9F0081F1BB /* lsproto.c in Sources */ = {isa = PBXBuildFile; fileRef = A43460AB1E3B7C9F0081F1BB /* lsproto.c */; };
+		A43460B11E3B7C9F0081F1BB /* lua-lzc.c in Sources */ = {isa = PBXBuildFile; fileRef = A43460AC1E3B7C9F0081F1BB /* lua-lzc.c */; };
+		A43460B21E3B7C9F0081F1BB /* sproto.c in Sources */ = {isa = PBXBuildFile; fileRef = A43460AE1E3B7C9F0081F1BB /* sproto.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -166,6 +169,11 @@
 		84F8B8B21C45678E00AE9B8F /* tolua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tolua.c; path = ../../tolua.c; sourceTree = "<group>"; };
 		84F8B8B41C45679700AE9B8F /* struct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = struct.c; path = ../../struct.c; sourceTree = "<group>"; };
 		84F8B8B61C45679C00AE9B8F /* lpeg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lpeg.c; path = ../../lpeg.c; sourceTree = "<group>"; };
+		A43460AB1E3B7C9F0081F1BB /* lsproto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lsproto.c; path = ../../sproto/lsproto.c; sourceTree = "<group>"; };
+		A43460AC1E3B7C9F0081F1BB /* lua-lzc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "lua-lzc.c"; path = "../../sproto/lua-lzc.c"; sourceTree = "<group>"; };
+		A43460AD1E3B7C9F0081F1BB /* msvcint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = msvcint.h; path = ../../sproto/msvcint.h; sourceTree = "<group>"; };
+		A43460AE1E3B7C9F0081F1BB /* sproto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sproto.c; path = ../../sproto/sproto.c; sourceTree = "<group>"; };
+		A43460AF1E3B7C9F0081F1BB /* sproto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sproto.h; path = ../../sproto/sproto.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +207,7 @@
 		0F4B04D51800959F002EA938 /* tolua */ = {
 			isa = PBXGroup;
 			children = (
+				A43460AA1E3B7C790081F1BB /* sproto */,
 				842A59A21C85B76100EA2815 /* cjson */,
 				84EF23541C4CCD3F0093A49A /* lua */,
 				84F8B8B81C4567C100AE9B8F /* luasocket */,
@@ -337,6 +346,18 @@
 			path = ../../luasocket;
 			sourceTree = "<group>";
 		};
+		A43460AA1E3B7C790081F1BB /* sproto */ = {
+			isa = PBXGroup;
+			children = (
+				A43460AB1E3B7C9F0081F1BB /* lsproto.c */,
+				A43460AC1E3B7C9F0081F1BB /* lua-lzc.c */,
+				A43460AD1E3B7C9F0081F1BB /* msvcint.h */,
+				A43460AE1E3B7C9F0081F1BB /* sproto.c */,
+				A43460AF1E3B7C9F0081F1BB /* sproto.h */,
+			);
+			name = sproto;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -403,6 +424,7 @@
 				842A59A91C85B76100EA2815 /* fpconv.c in Sources */,
 				8400928F1CCF406200F89A56 /* udp.c in Sources */,
 				84ED5C081C4D0749006965FF /* bit.c in Sources */,
+				A43460B01E3B7C9F0081F1BB /* lsproto.c in Sources */,
 				84EF23991C4CCD3F0093A49A /* lmathlib.c in Sources */,
 				840092871CCF406200F89A56 /* io.c in Sources */,
 				8400928C1CCF406200F89A56 /* serial.c in Sources */,
@@ -422,6 +444,7 @@
 				84EF23931C4CCD3F0093A49A /* ldump.c in Sources */,
 				84EF239B1C4CCD3F0093A49A /* loadlib.c in Sources */,
 				840092911CCF406200F89A56 /* usocket.c in Sources */,
+				A43460B11E3B7C9F0081F1BB /* lua-lzc.c in Sources */,
 				84EF23951C4CCD3F0093A49A /* lgc.c in Sources */,
 				842A59AA1C85B76100EA2815 /* lua_cjson.c in Sources */,
 				84EF23A51C4CCD3F0093A49A /* ltm.c in Sources */,
@@ -430,6 +453,7 @@
 				84EF239C1C4CCD3F0093A49A /* lobject.c in Sources */,
 				840092881CCF406200F89A56 /* luasocket.c in Sources */,
 				84EF23A11C4CCD3F0093A49A /* lstring.c in Sources */,
+				A43460B21E3B7C9F0081F1BB /* sproto.c in Sources */,
 				842A59AB1C85B76100EA2815 /* strbuf.c in Sources */,
 				84EF23A31C4CCD3F0093A49A /* ltable.c in Sources */,
 				84EF23A41C4CCD3F0093A49A /* ltablib.c in Sources */,

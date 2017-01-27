@@ -1,10 +1,10 @@
 cd luajit/src
 
 # Android/ARM, armeabi-v7a (ARMv7 VFP), Android 4.0+ (ICS)
-NDK=D:/android-ndk-r10e
+NDK=$NDK_ROOT
 NDKABI=21
 NDKVER=$NDK/toolchains/arm-linux-androideabi-4.9
-NDKP=$NDKVER/prebuilt/windows-x86_64/bin/arm-linux-androideabi-
+NDKP=$NDKVER/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-
 NDKF="--sysroot $NDK/platforms/android-$NDKABI/arch-arm" 
 NDKARCH="-march=armv7-a -mfloat-abi=softfp -Wl,--fix-cortex-a8"
 
